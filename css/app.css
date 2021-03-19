@@ -1,0 +1,468 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: black;
+  font-family: "Montserrat Alternates", sans-serif;
+  font-weight: normal;
+}
+
+span {
+  color: #000;
+}
+
+.paragraf {
+  color: #232323;
+}
+
+.black {
+  color: #000;
+}
+
+.black:hover {
+  color: #000;
+}
+
+.btn-outline-black {
+  color: #000000;
+  background-color: transparent;
+  border: 1px solid #000000;
+}
+
+.btn-outline-black:hover {
+  color: #ffffff;
+  background-color: #000000;
+}
+
+.btn-outline-black:hover i {
+  color: #ffffff;
+}
+
+body {
+  font-family: "Quicksand", sans-serif;
+  font-weight: normal;
+  font-size: 1em;
+}
+
+body .animate {
+  opacity: 0;
+  -webkit-transform: translate(-50px, 50px);
+          transform: translate(-50px, 50px);
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+body .animate.fade {
+  -webkit-transform: translate(0);
+          transform: translate(0);
+  opacity: 1;
+}
+
+body .animate-1 {
+  opacity: 0;
+  -webkit-transform: translateX(-50px);
+          transform: translateX(-50px);
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+body .animate-1.fade {
+  -webkit-transform: translate(0);
+          transform: translate(0);
+  opacity: 1;
+}
+
+body .animate-card {
+  opacity: 0;
+  -webkit-transform: translateY(70px);
+          transform: translateY(70px);
+  -webkit-transition: all 0.8s ease;
+  transition: all 0.8s ease;
+}
+
+body .animate-card.fade {
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+  opacity: 1;
+}
+
+body .animate-scale {
+  opacity: 0;
+  -webkit-transform: scale(0);
+          transform: scale(0);
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+body .animate-scale.fade {
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  opacity: 1;
+}
+
+body nav.navbar {
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+body nav.navbar.bg-putih {
+  background-color: white;
+}
+
+body nav.navbar .navbar-brand {
+  font-family: "Montserrat Alternates", sans-serif;
+  font-weight: medium;
+  -webkit-filter: drop-shadow(0px 2px 2px rgba(0, 0, 0, 0.1));
+          filter: drop-shadow(0px 2px 2px rgba(0, 0, 0, 0.1));
+}
+
+body nav.navbar .navbar-toggler {
+  border: none;
+  outline: none;
+}
+
+body nav.navbar .navbar-toggler .bar-icon1 {
+  width: 20px;
+  border-radius: 10px;
+  height: 2px;
+  background-color: black;
+  margin: 5px 0;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  display: block;
+  right: 0;
+}
+
+body nav.navbar .navbar-toggler .bar-icon1.change {
+  -webkit-transform: rotate(42deg) translate(2px, 6px);
+          transform: rotate(42deg) translate(2px, 6px);
+  width: 22px;
+}
+
+body nav.navbar .navbar-toggler .bar-icon2 {
+  width: 15px;
+  border-radius: 10px;
+  height: 2px;
+  background-color: black;
+  margin: 5px 0;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  display: block;
+  right: 0;
+}
+
+body nav.navbar .navbar-toggler .bar-icon2.change {
+  width: 0;
+}
+
+body nav.navbar .navbar-toggler .bar-icon3 {
+  width: 10px;
+  border-radius: 10px;
+  height: 2px;
+  background-color: black;
+  margin: 5px 0;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  display: block;
+  right: 0;
+}
+
+body nav.navbar .navbar-toggler .bar-icon3.change {
+  width: 22px;
+  -webkit-transform-origin: left;
+          transform-origin: left;
+  -webkit-transform: rotate(-42deg) translate(0px, -1px);
+          transform: rotate(-42deg) translate(0px, -1px);
+}
+
+body nav.navbar .navbar-toggler .bar-icon4 {
+  width: 5px;
+  border-radius: 10px;
+  height: 2px;
+  background-color: black;
+  margin: 5px 0;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  display: block;
+  right: 0;
+}
+
+body nav.navbar .navbar-toggler .bar-icon4.change {
+  width: 22px;
+  -webkit-transform-origin: left;
+          transform-origin: left;
+  -webkit-transform: rotate(-42deg) translate(0px, -1px);
+          transform: rotate(-42deg) translate(0px, -1px);
+}
+
+body nav.navbar .navbar-toggler .bar-icon5 {
+  width: 0px;
+  border-radius: 10px;
+  height: 2px;
+  background-color: black;
+  margin: 5px 0;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  display: block;
+  right: 0;
+}
+
+body nav.navbar .navbar-toggler .bar-icon5.change {
+  width: 22px;
+  -webkit-transform-origin: left;
+          transform-origin: left;
+  -webkit-transform: rotate(-42deg) translate(0px, -1px);
+          transform: rotate(-42deg) translate(0px, -1px);
+}
+
+body nav.navbar .navbar-toggler .bar-icon6 {
+  width: -5px;
+  border-radius: 10px;
+  height: 2px;
+  background-color: black;
+  margin: 5px 0;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  display: block;
+  right: 0;
+}
+
+body nav.navbar .navbar-toggler .bar-icon6.change {
+  width: 22px;
+  -webkit-transform-origin: left;
+          transform-origin: left;
+  -webkit-transform: rotate(-42deg) translate(0px, -1px);
+          transform: rotate(-42deg) translate(0px, -1px);
+}
+
+body nav.navbar .navbar-toggler .bar-icon7 {
+  width: -10px;
+  border-radius: 10px;
+  height: 2px;
+  background-color: black;
+  margin: 5px 0;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  display: block;
+  right: 0;
+}
+
+body nav.navbar .navbar-toggler .bar-icon7.change {
+  width: 22px;
+  -webkit-transform-origin: left;
+          transform-origin: left;
+  -webkit-transform: rotate(-42deg) translate(0px, -1px);
+          transform: rotate(-42deg) translate(0px, -1px);
+}
+
+body nav.navbar .navbar-toggler .bar-icon8 {
+  width: -15px;
+  border-radius: 10px;
+  height: 2px;
+  background-color: black;
+  margin: 5px 0;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  display: block;
+  right: 0;
+}
+
+body nav.navbar .navbar-toggler .bar-icon8.change {
+  width: 22px;
+  -webkit-transform-origin: left;
+          transform-origin: left;
+  -webkit-transform: rotate(-42deg) translate(0px, -1px);
+          transform: rotate(-42deg) translate(0px, -1px);
+}
+
+body nav.navbar .navbar-toggler .bar-icon9 {
+  width: -20px;
+  border-radius: 10px;
+  height: 2px;
+  background-color: black;
+  margin: 5px 0;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  display: block;
+  right: 0;
+}
+
+body nav.navbar .navbar-toggler .bar-icon9.change {
+  width: 22px;
+  -webkit-transform-origin: left;
+          transform-origin: left;
+  -webkit-transform: rotate(-42deg) translate(0px, -1px);
+          transform: rotate(-42deg) translate(0px, -1px);
+}
+
+body nav.navbar li {
+  font-family: "Montserrat Alternates", sans-serif;
+  font-weight: medium;
+  margin-right: 2em;
+}
+
+body nav.navbar li a {
+  font-size: 1em;
+  font-weight: 500;
+}
+
+body nav.navbar li a.active {
+  font-weight: bold;
+}
+
+body #hero-1 {
+  height: 100vh;
+  background-color: #fdb827;
+}
+
+body #hero-1 .main {
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body #hero-1 .main .btn-email {
+  opacity: 0;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  -webkit-transform: translateY(30px);
+          transform: translateY(30px);
+}
+
+body #hero-1 .main .btn-email.fade {
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+  opacity: 1;
+}
+
+body #hero-1 .main .info .nickname {
+  color: black;
+  text-align: center;
+  font-family: "Quicksand", sans-serif;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  margin-top: 0.8em;
+  margin-bottom: 1em;
+}
+
+body #hero-1 .main .info h2 {
+  font-weight: bold;
+  color: black;
+}
+
+body #hero-1 .main .media {
+  color: black;
+}
+
+body #hero-1 .main .btn-email {
+  border: 1px solid black;
+  border-radius: 6px;
+  font-family: "Quicksand", sans-serif;
+  font-weight: 500;
+  color: black;
+}
+
+body #hero-1 .main .btn-email:hover {
+  background-color: #000000;
+  color: #ffffff;
+}
+
+body #hero-1 .main .btn-email:hover i {
+  color: #ffffff;
+}
+
+body #tentang {
+  padding-top: 4em;
+}
+
+body #tentang h2.tentang {
+  font-weight: 600;
+  color: black;
+}
+
+body #tentang p {
+  line-height: 1.7em;
+}
+
+body #projek {
+  padding: 4em 0;
+}
+
+body #projek h2.projek {
+  font-weight: 600;
+  color: black;
+}
+
+body #projek .card p {
+  font-size: 0.9em;
+}
+
+body #mari {
+  background-color: #fdb827;
+  padding: 4em 0;
+}
+
+body #mari h2.mari {
+  font-weight: 600;
+  color: black;
+}
+
+body #mari p {
+  line-height: 1.7em;
+}
+
+body #mari .blog {
+  opacity: 0.8;
+}
+
+body #mari .blog a {
+  text-decoration: none;
+  color: #232323;
+}
+
+body #tertarik {
+  padding: 4em 0;
+}
+
+body #tertarik h2 {
+  text-align: center;
+  font-weight: 600;
+  color: black;
+}
+
+body #tertarik .btn-email {
+  border: 1px solid black;
+  border-radius: 6px;
+  font-family: "Quicksand", sans-serif;
+  font-weight: 500;
+  color: #ffffff;
+  background-color: black;
+}
+
+body #tertarik .lihat-projek {
+  border: 1px solid black;
+  border-radius: 6px;
+  font-family: "Quicksand", sans-serif;
+  font-weight: 500;
+  color: #000;
+}
+
+body footer {
+  background-color: #fdb827;
+}
+
+body footer i {
+  color: #000000;
+}
+
+body footer #copyright a {
+  font-weight: 500;
+  color: #000;
+}
+/*# sourceMappingURL=app.css.map */

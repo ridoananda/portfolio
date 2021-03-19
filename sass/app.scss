@@ -1,0 +1,240 @@
+// Variables
+@import "variables";
+@import "mixin";
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: black;
+  @include MontserratAlternates();
+}
+span {
+  color: #000;
+}
+
+.paragraf {
+  color: $paragraf;
+}
+.black {
+  color: #000;
+  &:hover {
+    color: #000;
+  }
+}
+.btn-outline-black {
+  color: #000000;
+  background-color: transparent;
+  border: 1px solid #000000;
+
+  &:hover {
+    i {
+      color: #ffffff;
+    }
+    color: #ffffff;
+    background-color: #000000;
+  }
+}
+body {
+  .animate {
+    @include animate();
+  }
+  .animate-1 {
+    @include animate-1();
+  }
+  .animate-card {
+    @include animate-card();
+  }
+  .animate-scale {
+    @include animate-scale();
+  }
+  @include Quicksand();
+  font-size: 1em;
+  nav.navbar {
+    transition: all 0.5s;
+
+    &.bg-putih {
+      background-color: white;
+      // border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+    }
+    .navbar-brand {
+      @include MontserratAlternates(medium);
+      filter: drop-shadow(0px 2px 2px rgba(0, 0, 0, 0.1));
+    }
+    .navbar-toggler {
+      border: none;
+      outline: none;
+      @for $num from 1 to 10 {
+        .bar-icon#{$num} {
+          width: 25px - ($num * 5);
+          border-radius: 10px;
+          height: 2px;
+          background-color: black;
+          margin: 5px 0;
+          transition: 0.4s;
+          display: block;
+          right: 0;
+          &.change {
+            @if $num == 1 {
+              transform: rotate(42deg) translate(2px, 6px);
+              width: 22px;
+            }
+            @elseif $num == 2 {
+              width: 0;
+            } @else {
+              width: 22px;
+              transform-origin: left;
+              transform: rotate(-42deg) translate(0px, -1px);
+            }
+          }
+        }
+      }
+    }
+    li {
+      @include MontserratAlternates(medium);
+      margin-right: 2em;
+      a {
+        font-size: 1em;
+        font-weight: 500;
+        &.active {
+          font-weight: bold;
+        }
+      }
+    }
+  }
+
+  #hero-1 {
+    height: 100vh;
+    background-color: $primaryColor;
+
+    .main {
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      .btn-email {
+        opacity: 0;
+        transition: all 0.5s ease;
+        transform: translateY(30px);
+        &.fade {
+          transform: translateY(0);
+          opacity: 1;
+        }
+      }
+      .info {
+        .nickname {
+          color: black;
+          text-align: center;
+          @include Quicksand(600);
+          letter-spacing: 0.1em;
+          margin-top: 0.8em;
+          margin-bottom: 1em;
+        }
+        h2 {
+          font-weight: bold;
+          color: black;
+        }
+      }
+
+      .media {
+        color: black;
+      }
+      .btn-email {
+        border: 1px solid black;
+        border-radius: 6px;
+        @include Quicksand(500);
+        color: black;
+
+        &:hover {
+          i {
+            color: #ffffff;
+          }
+          background-color: #000000;
+          color: #ffffff;
+        }
+      }
+    }
+  }
+
+  #tentang {
+    padding-top: 4em;
+    h2.tentang {
+      font-weight: 600;
+      color: black;
+    }
+    p {
+      line-height: 1.7em;
+    }
+  }
+
+  #projek {
+    padding: 4em 0;
+    h2.projek {
+      font-weight: 600;
+      color: black;
+    }
+    .card {
+      p {
+        font-size: 0.9em;
+      }
+    }
+  }
+
+  #mari {
+    background-color: $primaryColor;
+    padding: 4em 0;
+
+    h2.mari {
+      font-weight: 600;
+      color: black;
+    }
+    p {
+      line-height: 1.7em;
+    }
+    .blog {
+      opacity: 0.8;
+      a {
+        text-decoration: none;
+        color: $paragraf;
+      }
+    }
+  }
+
+  #tertarik {
+    padding: 4em 0;
+    h2 {
+      text-align: center;
+      font-weight: 600;
+      color: black;
+    }
+
+    .btn-email {
+      border: 1px solid black;
+      border-radius: 6px;
+      @include Quicksand(500);
+      color: #ffffff;
+      background-color: black;
+    }
+
+    .lihat-projek {
+      border: 1px solid black;
+      border-radius: 6px;
+      @include Quicksand(500);
+      color: #000;
+    }
+  }
+
+  footer {
+    background-color: $primaryColor;
+    i {
+      color: #000000;
+    }
+    #copyright {
+      a {
+        font-weight: 500;
+        color: #000;
+      }
+    }
+  }
+}

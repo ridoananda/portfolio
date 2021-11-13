@@ -1,2 +1,3 @@
 # portfolio
-Portfolio ini dibuat dengan Bootstrap 4, jQuery, dan SASS. Silahkan ambil dan jangan lupa tag github saya ya:)
+This make with Bootstrap 4, SASS, jQuery.
+don't forget tag my github :)
